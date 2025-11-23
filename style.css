@@ -57,11 +57,15 @@
     }
 
     .Hero-sec {
+        display: inline-block;
         width: 1440px;
          height: 812.5326538085938px;
          opacity: 1;
          z-index: 0%;
     }
+
+    
+
     .service {
         background-color: #FFF3E3;
         height: 380px;
@@ -277,93 +281,9 @@
     opacity: .9;
 }
 
- /* * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      padding: 40px;
-    }
-    .container {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-    }
-    .left {
-      flex: 1;
-    }
-    .left h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .left p {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 30px;
-    }
-    .left button {
-      background: #f4c10f;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-    .right {
-      flex: 1;
-      position: relative;
-      overflow: hidden;
-    }
-    .slider {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
-    .slide {
-      min-width: 100%;
-      padding: 10px;
-    }
-    .slide img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .dots {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: #ccc;
-      margin: 0 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .dot:hover,
-    .dot.active {
-      background: #f4c10f;
-    }
-    .arrow {
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      background: #f4c10f;
-      border: none;
-      padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-    } */
 
-       body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-    }
+
+
     .container {
       display: flex;
       padding: 60px 80px;
@@ -475,13 +395,12 @@
     }
 
 
-    /* ya sa aga */
 
 footer-logo {
     font-size: 24px;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 50px; /* دائیں کالموں سے زیادہ فاصلہ */
+    margin-bottom: 50px; 
 }
 
 .address {
@@ -490,7 +409,6 @@ footer-logo {
     line-height: 1.6;
 }
 
-/* Columns 2 & 3: Links */
 .footer-links h3 {
     font-size: 16px;
     font-weight: 500;
@@ -519,7 +437,6 @@ footer-logo {
     color: #B88E2F;
 }
 
-/* Column 4: Newsletter */
 .newsletter h3 {
     font-size: 16px;
     font-weight: 500;
@@ -537,7 +454,7 @@ footer-logo {
     border-bottom: 1px solid #000000;
     padding: 5px 0;
     font-size: 14px;
-    width: 180px; /* سائز کو ایڈجسٹ کیا گیا */
+    width: 180px;
     outline: none;
 }
 
@@ -562,7 +479,6 @@ footer-logo {
     border-bottom: 1px solid #B88E2F;
 }
 
-/* Copyright Section */
 .copyright {
     max-width: 1200px;
     margin: 0 auto;
@@ -576,15 +492,12 @@ footer-logo {
     font-weight: 400;
 }
 
-/* ya sa gemi */
-
-/* --- Global Reset and Variables --- */
 :root {
-    --primary-color: #B88E2F; /* Brown/Tan color for CTA and highlights */
+    --primary-color: #B88E2F; 
     --text-dark: #3A3A3A;
     --text-grey: #616161;
     --light-bg: #FCF8F3;
-    --font-family: 'Poppins', sans-serif; /* Use a suitable font, like Poppins or a standard sans-serif */
+    --font-family: 'Poppins', sans-serif; 
 }
 
 * {
@@ -598,20 +511,17 @@ body {
     color: var(--text-dark);
 }
 
-/* --- Section: Inspirations (50+ Beautiful rooms inspiration) --- */
 .inspirations-section {
     display: flex;
-    /* This section is contained within the main/body width and should ideally be fullscreen/full-width */
-    max-width: 1440px; /* Assuming a common desktop max width */
+    max-width: 1440px; 
     margin: 0 auto;
     padding: 40px 0;
     background-color: var(--light-bg);
     min-height: 700px;
 }
 
-/* --- Left Side: Text Content --- */
 .inspirations-content {
-    flex: 1; /* Takes up 1 part of the flex space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -651,13 +561,12 @@ body {
     background-color: #a07a27;
 }
 
-/* --- Right Side: Carousel/Image Collage --- */
 .inspirations-carousel-container {
-    flex: 2; /* Takes up 2 parts of the flex space */
+    flex: 2; 
     position: relative;
-    padding-left: 20px; /* Space from the text column */
+    padding-left: 20px; 
     display: flex;
-    align-items: center; /* Vertically align items */
+    align-items: center;
     gap: 20px;
 }
 
@@ -674,25 +583,19 @@ body {
     display: block;
 }
 
-/* Styling for the large featured image */
 .featured-item {
-    width: 70%; /* Adjust size ratio */
+    width: 70%; 
     height: 100%;
-    max-height: 600px; /* Cap the max height */
+    max-height: 600px;
 }
 
-.featured-item img {
-    /* Image inside the featured item */
-}
 
-/* Styling for the smaller next image */
 .next-item {
-    width: 30%; /* Adjust size ratio */
-    height: 500px; /* Smaller height than the featured item */
-    align-self: flex-end; /* Align the bottom of this item with the featured item */
+    width: 30%; 
+    height: 500px; 
+    align-self: flex-end;
 }
 
-/* Overlay for the featured item (Bed Room, Inner Peace) */
 .item-info {
     position: absolute;
     left: 0;
@@ -701,7 +604,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.8); 
     backdrop-filter: blur(2px);
     width: 300px;
     border-radius: 0 10px 0 0;
@@ -743,11 +646,10 @@ body {
     background-color: #a07a27;
 }
 
-/* Carousel Dots */
 .carousel-dots {
     position: absolute;
     bottom: 30px;
-    right: 35%; /* Position relative to the whole container */
+    right: 35%;
     display: flex;
     gap: 10px;
 }
@@ -763,11 +665,10 @@ body {
 
 .dot.active {
     background-color: var(--primary-color);
-    width: 25px; /* Highlight the active dot */
+    width: 25px;
     border-radius: 5px;
 }
 
-/* --- Section: Gallery (#FuniFurniture) --- */
 .gallery-section {
     padding: 80px 40px;
     text-align: center;
@@ -787,7 +688,6 @@ body {
 
 .photo-grid-wrapper {
     display: grid;
-    /* Creates 4 columns of equal width for the image layout */
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     max-width: 1200px;
@@ -802,33 +702,27 @@ body {
 
 .photo-column img {
     width: 100%;
-    /* The height will vary based on the original image dimensions, 
-       but object-fit: cover is good for consistency */
+   
     object-fit: cover; 
     display: block;
     border-radius: 5px;
 }
 
-/* Special sizing based on the Figma image structure */
-/* Column 1: Tall-Small */
+
 .column-1 img:nth-child(1) { height: 450px; } 
 .column-1 img:nth-child(2) { height: 250px; }
 
-/* Column 2: Small-Tall */
 .column-2 img:nth-child(1) { height: 350px; }
 .column-2 img:nth-child(2) { height: 350px; }
 
-/* Column 3: Tall-Small */
 .column-3 img:nth-child(1) { height: 400px; }
 .column-3 img:nth-child(2) { height: 300px; }
 
-/* Column 4: Small-Small-Small (adjust heights to look like the design) */
 .column-4 img:nth-child(1) { height: 200px; }
 .column-4 img:nth-child(2) { height: 200px; }
 .column-4 img:nth-child(3) { height: 300px; }
 
 
-/* --- Footer --- */
 .main-footer {
     border-top: 1px solid #D9D9D9;
     padding-top: 50px;
@@ -842,14 +736,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px 50px;
-    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .footer-col {
-    margin: 15px; /* Add some spacing around columns */
+    margin: 15px;
 }
 
-/* Brand Info Column */
 .brand-info {
     max-width: 300px;
 }
@@ -866,7 +759,6 @@ body {
     line-height: 1.6;
 }
 
-/* Link Columns (Links and Help) */
 .footer-links h3 {
     font-size: 1.1rem;
     font-weight: 500;
@@ -893,7 +785,6 @@ body {
     color: var(--primary-color);
 }
 
-/* Newsletter Column */
 .newsletter h3 {
     font-size: 1.1rem;
     font-weight: 500;
@@ -933,7 +824,6 @@ body {
     border-color: var(--primary-color);
 }
 
-/* Copyright Bar */
 .copyright {
     border-top: 1px solid #D9D9D9;
     padding: 20px 40px 0;
@@ -946,7 +836,6 @@ body {
     color: var(--text-dark);
 }
 
-/* --- Responsive Adjustments (Basic) --- */
 @media (max-width: 1024px) {
     .inspirations-section {
         flex-direction: column;
@@ -960,7 +849,7 @@ body {
     }
     .inspirations-carousel-container {
         padding: 20px;
-        height: 550px; /* Give the carousel a fixed height on smaller screens */
+        height: 550px; 
     }
     
     .footer-container {
@@ -973,7 +862,7 @@ body {
     }
 
     .photo-grid-wrapper {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
@@ -988,7 +877,7 @@ body {
         width: 100%;
     }
     .next-item {
-        display: none; /* Hide the smaller image on small phones */
+        display: none; 
     }
     .carousel-dots {
         right: 50%;
@@ -1006,6 +895,6 @@ body {
     }
 
     .photo-grid-wrapper {
-        grid-template-columns: 1fr; /* 1 column on phones */
+        grid-template-columns: 1fr;
     }
 }
