@@ -898,3 +898,132 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ---------------------- RESPONSIVE FIXES ---------------------- */
+
+/* Laptop / Tablet */
+@media (max-width: 1200px) {
+
+  .Hero-sec {
+    width: 100%;
+    height: auto;
+  }
+
+  .service {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .button {
+    margin-top: 30px;
+    left: auto;
+  }
+
+  .browse-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  .browse-boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .inspirations-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .featured-item {
+    width: 100%;
+  }
+
+  .next-item {
+    display: none;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .nav-center,
+  .nav-right i:not(.fa-bars) {
+    display: none;
+  }
+
+  .Hero-sec img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .h1 {
+    font-size: 28px;
+  }
+
+  .button {
+    width: 180px;
+    height: 60px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .browse-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .right {
+    flex-direction: column;
+  }
+
+  .photo-grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
